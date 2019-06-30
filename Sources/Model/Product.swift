@@ -1,6 +1,6 @@
 import Foundation
 
-final class Product: Codable {
+public final class Product: Codable {
     var id: Int?
     var name: String
     var thumbnailURL: URL
