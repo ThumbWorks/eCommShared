@@ -1,12 +1,12 @@
 import Foundation
 
 public final class Product: Codable {
-    var id: Int?
-    var name: String
-    var thumbnailURL: URL
-    var priceInCents: Int
+    public var id: Int?
+    public var name: String
+    public var thumbnailURL: URL
+    public var priceInCents: Int
     
-    init(name: String, thumbnailURL: URL, priceInCents: Int) {
+    public init(name: String, thumbnailURL: URL, priceInCents: Int) {
         self.name = name
         self.thumbnailURL = thumbnailURL
         self.priceInCents = priceInCents
