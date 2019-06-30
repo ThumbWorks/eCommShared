@@ -1,3 +1,5 @@
+import Foundation
+
 final class Product: Codable {
     var id: Int?
     var name: String

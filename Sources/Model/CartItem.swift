@@ -1,10 +1,12 @@
+import Foundation
+
 final class CartItem: Codable {
     var id: UUID?
     var quantity: Int
-    let productID: Product.ID
+    let productID: UUID
 //    var priceInCents: Int
     
-    init(quantity: Int, productID: Product.ID) {
+    init(quantity: Int, productID: UUID) {
         self.quantity = quantity
         self.productID = productID
     }
