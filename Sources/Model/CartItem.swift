@@ -13,11 +13,11 @@ public final class CartItem: Codable {
 }
 
 public final class CartItemWithProduct: Codable {
-    public let id: UUID
+    public let id: UUID?
     public let quantity: Int
     public let product: Product
     
-    public init(id: UUID, quantity: Int, product: Product) {
+    public init(id: UUID?, quantity: Int, product: Product) {
         self.id = id
         self.quantity = quantity
         self.product = product
