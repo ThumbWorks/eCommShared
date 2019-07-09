@@ -12,6 +12,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>Model</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>eCommShared</key>
 		<dict>
 			<key>primary</key>

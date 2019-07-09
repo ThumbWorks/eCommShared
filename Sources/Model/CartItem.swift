@@ -12,6 +12,8 @@ public final class CartItem: Codable {
     }
 }
 
+extension CartItem: Equatable {}
+
 public final class CartItemWithProduct: Codable {
     public let id: UUID?
     public let quantity: Int
@@ -24,3 +26,4 @@ public final class CartItemWithProduct: Codable {
     }
 }
 
+extension CartItemWithProduct: Equatable {}

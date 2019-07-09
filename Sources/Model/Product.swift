@@ -12,3 +12,5 @@ public final class Product: Codable {
         self.priceInCents = priceInCents
     }
 }
+
+extension Product: Equatable {}
