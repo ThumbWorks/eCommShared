@@ -1,6 +1,6 @@
 import Foundation
 
-public final class CartItem: Codable {
+public struct CartItem: Codable, Equatable {
     public var id: UUID?
     public var quantity: Int
     public let productID: UUID
@@ -12,9 +12,7 @@ public final class CartItem: Codable {
     }
 }
 
-extension CartItem: Equatable {}
-
-public final class CartItemWithProduct: Codable {
+public struct CartItemWithProduct: Codable, Equatable {
     public let id: UUID?
     public let quantity: Int
     public let product: Product
@@ -25,5 +23,3 @@ public final class CartItemWithProduct: Codable {
         self.product = product
     }
 }
-
-extension CartItemWithProduct: Equatable {}

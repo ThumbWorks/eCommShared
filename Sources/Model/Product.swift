@@ -1,6 +1,6 @@
 import Foundation
 
-public final class Product: Codable {
+public struct Product: Codable, Equatable {
     public var id: Int?
     public var name: String
     public var thumbnailURL: URL
@@ -12,5 +12,3 @@ public final class Product: Codable {
         self.priceInCents = priceInCents
     }
 }
-
-extension Product: Equatable {}
