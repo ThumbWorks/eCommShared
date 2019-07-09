@@ -3,10 +3,10 @@ import Foundation
 public struct CartItem: Codable, Equatable {
     public var id: UUID?
     public var quantity: Int
-    public let productID: UUID
+    public let productID: Int
 //    var priceInCents: Int
     
-    public init(quantity: Int, productID: UUID) {
+    public init(quantity: Int, productID: Int) {
         self.quantity = quantity
         self.productID = productID
     }
