@@ -6,7 +6,7 @@ public struct Product: Codable, Equatable {
     public var thumbnailURL: URL
     public var priceInCents: Int
     
-    public init(name: String, thumbnailURL: URL, priceInCents: Int) {
+    public init(id: Int? = nil, name: String, thumbnailURL: URL, priceInCents: Int) {
         self.name = name
         self.thumbnailURL = thumbnailURL
         self.priceInCents = priceInCents
