@@ -6,7 +6,8 @@ public struct CartItem: Codable, Equatable {
     public let productID: Int
 //    var priceInCents: Int
     
-    public init(quantity: Int, productID: Int) {
+    public init(id: UUID? = nil, quantity: Int, productID: Int) {
+        self.id = id
         self.quantity = quantity
         self.productID = productID
     }
